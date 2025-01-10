@@ -62,7 +62,7 @@ header {
 }
 
 .home-detail h1 {
-    font-size: 55px;
+    font-size: 48px;
     line-height: 1;
 }
 
@@ -109,13 +109,16 @@ header {
     margin: 0 8px;
     transition: .5s;
     justify-content: center;
+    position: relative;
+    top: 120px;
+    left: 110px;
 }
 
 .social-icons {
     margin-top: 20px; 
     display: flex;
     justify-content: center;
-    gap: 13px;
+    gap: 50px;
     margin-right: 120px;
   }
 
@@ -129,12 +132,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
+    gap: 15px;
     padding: 50px;
+    margin: 50px;
+    padding-top: 0.1px;
+
 }
 
 .image-container img {
-    width: 310px;
+    width: 997px;
     height: auto;
     border: 2px solid white;
     border-radius: 5px;
@@ -190,12 +196,12 @@ header {
 .cards-container {
     display: flex; 
     justify-content: space-between; 
-    gap: 50px;
+    gap: 20px;
     flex-wrap: wrap; 
-    padding: 160px;
+    padding: 20px;
     width: 100%;
     box-sizing: border-box;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .cards-container {
@@ -207,12 +213,16 @@ header {
  .card {
     background-color: #c0a982;
     border: 1px solid #ddd;
-    border-radius: 12px; 
+    border-radius: 10px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     overflow: hidden; 
     width: 320px; 
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
+    padding: 20px;
+    flex: 1;
+
  }
 
  .card {
@@ -229,15 +239,20 @@ header {
     width: 320px;
     text-align: center;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
-    perspective: 1000px;
+    perspective: 100px;
+    margin-top: 50px;
+    max-width: 30%;
+    flex: 1;
   }
  
 .card img {
-    width: 100%;
-    height: 200px;
+    max-width: 100%;
+    height: auto;
     object-fit: cover; 
-    border-radius: 12px 12px 0 0; 
+    border-radius: 30px; 
     transition: transform 0.5s ease;
+    margin-bottom: 15px;
+    margin-top: 20px;
 }
 
 .card h2 {
@@ -246,6 +261,7 @@ header {
     color: #333;
     font-weight: bold;
     text-align: center;
+    margin-top: 50px;
   }
 
 .title-container h1 {
@@ -260,11 +276,13 @@ header {
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    height: 150px; 
+    height: 50px; 
     background-color: #f5e6da; 
     border-radius: 8px; 
     margin: -20px auto 0;
-    margin-top: -40px;
+    margin-top: 500px;
+    gap: 20px;
+    padding: 20px;
 }
 
 .education-story-container h1 {
@@ -273,7 +291,7 @@ header {
     text-transform: uppercase; 
     color: #3b3d2f; 
     margin: 0; 
-    margin-top: -40px;
+    margin-top: -700px;
  }
 
 .title-container h1 {
@@ -515,5 +533,221 @@ header {
     margin-top: 0.1px;
     margin-top: -85px;
 }
+
+.about-image{
+    flex:1;
+    margin-right: 50px;
+    overflow: hidden;
+
+}
+
+.about-image img{
+    max-width: 500px;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.about-content{
+    flex: 1;
+    padding-top: 20px;
+    top: 20px;
+    margin: 10px;
+    padding-top: 10px;
+    padding: 0.1px;
+}
+
+.about-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    height: 350px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .form-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  form input,
+  form textarea {
+    width: 50%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #432b09;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  form textarea {
+    resize: none;
+    height: 40px;
+  }
+  
+  form button {
+    background-color: #5f4726;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #444;
+  }
+  
+  .info-section {
+    flex: 0.8;
+    text-align: left;
+  }
+  
+  .info-section h2 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  
+  .info-section p {
+    margin-bottom: 20px;
+  }
+  
+  .info-section strong {
+    font-weight: bold;
+  }
+  
+  
+  .social-icons {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    margin-top: -70px;
+    margin-left: 40px;
+  }
+  
+  .social-icons a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a img:hover {
+    transform: scale(1.1);
+  }
+
+.student-profile {
+  display: flex;
+  gap: 20px;
+  background-color: #e8ddce;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 125px;
+  margin-left:300px;
+}
+
+.profile-box {
+  flex: 1;
+  background-color: #b18a63;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.profile-box img {
+  width: 100px; 
+  height: 120px; 
+  border-radius: 50%; 
+  object-fit: cover;
+  border: #ffffff;
+  margin: 10px;
+  display: block;
+  margin-left: 60px;
+}
+
+.profile-box h1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.profile-box p {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.details-box {
+  flex: 2;
+  background-color: #916c48;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.details-box h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.details-box p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #f4f4f4;
+  left: 50px;
+}
+
+.details-box a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+.details-box a:hover {
+  text-decoration: underline;
+}
+
+.title-container h4{
+  margin-top: -10px;
+  font-size: 36px;
+  padding-top: -10px;
+  position: relative;
+  top: -10px;
+  text-align: center;
+}
+
+
+
+ 
+
+  
+  
+ 
+  
+
+    
+
 
 
